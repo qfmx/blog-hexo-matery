@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: huxuyf的个人博客                # 网站标题
-subtitle: '让生活变得更精彩'        # 网站副标题
-description: '记录huxuyf的个人日志'  # 网站描述
+title: 浅枫沐雪                # 网站标题
+subtitle: '浅浅相遇、念念不忘'        # 网站副标题
+description: '为了更好的遇见'  # 网站描述
 keywords:                # 关键词
-author: huxuyf       # 作者本人
+author: allms       # 作者本人
 language: zh-CN   # 语言：中文
 timezone: 'Asia/Shanghai'    # 时区
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://huxuyf.github.io/       # 网址
+url: https://qfmx.github.io/       # 网址
 root: /
 permalink: p/:abbrlink.html      # 文章命名
 abbrlink:

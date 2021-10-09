@@ -2,90 +2,66 @@
 
 > 使用Hexo搭建博客，并使用了matery这个模板
 
-
-
-## 一、下载及安装
-
->  **Hexo**，[源码](https://github.com/hexojs/hexo) 
-
 ### 1、Hexo安装准备工作
 
 前提条件：已安装好Node.js
 
 ```bash
+# 1. 安装Hexo；
 npm install hexo-cli -g
+# 2. 部署到Github/Gitee上所需；
 npm install hexo-deployer-git --save
 ```
 
-1. 安装Hexo；
-2. 部署到Github上所需；
-
-### 2、Hexo初始化
-
-在D盘新建一个Hexo目录，并在里面执行如下命令：
+## 2、下载及安装源码
 
 ```bash
-hexo init
+# 由于本仓库是完整源码，请改成自己的
+git clone https://github.com/qfmx/hexo-matery-app.git
+```
+### 3、hexo-matery初始化
+
+切换到源码目录里面：hexo-matery-app，执行如下命令：
+
+```bash
+# 安装依赖，安装完其实也就差不多了，否则按照4步骤依次安装
 npm install
 ```
-
-![Hexo初始化](https://cdn.jsdelivr.net/gh/huxuyf/images/20210220201538.png)
-
-
-
-### 3、下载matery模板
-
-[下载地址](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master)
-
-下载后，解压，将文件`hexo-theme-matery-master`移动到Hexo的`themes`目录下（`D:\Hexo\themes`）
-
-
-
-**注意：为保持前后一致，请将该文件夹改名为`matery`**
-
-
 
 ### 4、安装插件
 
 ```bash
+# 1. 搜索功能；
 npm install hexo-generator-search --save
+# 2. 中文链接转拼音；
 npm i hexo-permalink-pinyin --save
+# 3. 文章字数统计；
 npm i --save hexo-wordcount
+# 4. RSS订阅；
 npm install hexo-generator-feed --save
 ```
-
-1. 搜索功能；
-2. 中文链接转拼音；
-3. 文章字数统计；
-4. RSS订阅；
-
-如果之前安装过prismjs，则需要卸载`npm uninstall hexo-prism-plugin`
-
-
+注意: 如果之前安装过prismjs，则需要卸载`npm uninstall hexo-prism-plugin`
 
 ### 5、新增一些文件
 
-> 在Hexo根目录下执行
+> 在Hexo根目录下执行,使用作者原主题才执行，使用本仓库不用执行。
 
 ```bash
+# 1. 新增分类页；
 hexo new page "categories"
+# 2. 新增标签页；
 hexo new page "tags"
+# 3. 新增关于页；
 hexo new page "about"
+# 4. 新增留言板页；
 hexo new page "contact"
+# 5. 新增友情链接页；
 hexo new page "friends"
+# 6. 新增404页
 hexo new page 404
 ```
 
-1. 新增分类页；
-2. 新增标签页；
-3. 新增关于页；
-4. 新增留言板页；
-5. 新增友情链接页；
-6. 新增404页
-
-
-
-## 二、修改
+## 二、修改配置主题
 
 ### 1、Hexo配置文件的修改
 

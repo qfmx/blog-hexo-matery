@@ -44,8 +44,8 @@ menu:
 time:
   enable: true
   year: 2021 # 年份
-  month: 02 # 月份
-  date: 20 # 日期
+  month: 08 # 月份
+  date: 09 # 日期
   hour: 23 # 小时
   minute: 59 # 分钟
   second: 59 # 秒
@@ -66,8 +66,8 @@ cover:
 dream:
   enable: false
   showTitle: true
-  title: 我的格言
-  text: 天生我材必有用 - huxuyf
+  title: 我的寄语
+  text: 大可不必说的天花乱坠
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
@@ -126,19 +126,19 @@ indexbtn:
   enable: true
   name: Github
   icon: fab fa-github
-  url: https://github.com/huxuyf/
+  url: https://github.com/qfmx/
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github: https://github.com/huxuyf
-  email: huxuyf@139.com
+  github: https://github.com/qfmx
+  email: mail.xyj@allms.cn
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
-  qq: 45091706
-  weibo: https://weibo.com/shingu
-  zhihu: https://www.zhihu.com/people/shingu
+  qq: 1125438556
+  weibo: https://weibo.com/qfmx520
+  zhihu: # 
   rss: true # true、false
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
@@ -204,8 +204,8 @@ clicklove:
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
   avatar: /medias/avatar.jpg
-  career: 打杂的
-  introduction: 天生我材必有用
+  career: 软件开发
+  introduction: 初见惊艳。
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
@@ -390,7 +390,7 @@ githubLink:
 # 阅读文章的密码验证功能，如要使用此功能请激活该配置项，并在对应文章的Front-matter中写上'password'的键和加密后的密文即可.
 # 请注意：为了保证密码原文不会被泄露到网页中，文章的密码必须是通过'SHA256'加密的，这样就不会被破解.
 verifyPassword:
-  enable: false
+  enable: true
   promptMessage: 请输入访问本文章的密码
   errorMessage: 密码错误，将返回主页！
 
@@ -600,7 +600,7 @@ icp:
 # 更多关于访问速度优化，请查看：https://blog.sky03.cn/posts/42790.html
 # 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在上面设置js及css路径中可以直接写.min.xxx
 jsDelivr:
-  url: # https://cdn.jsdelivr.net/gh/huxuyf/huxuyf.github.io
+  url: #
   
 # 网站背景图
 background:

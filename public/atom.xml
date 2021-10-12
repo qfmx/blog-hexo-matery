@@ -3,11 +3,11 @@
   <title>浅枫沐雪</title>
   
   <subtitle>sh allow s now</subtitle>
-  <link href="https://qfmx.github.io/atom.xml" rel="self"/>
+  <link href="https://allms.cn/atom.xml" rel="self"/>
   
-  <link href="https://qfmx.github.io/"/>
+  <link href="https://allms.cn/"/>
   <updated>2021-02-22T11:56:11.331Z</updated>
-  <id>https://qfmx.github.io/</id>
+  <id>https://allms.cn/</id>
   
   <author>
     <name>allms</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>hello</title>
-    <link href="https://qfmx.github.io/p/13522.html"/>
-    <id>https://qfmx.github.io/p/13522.html</id>
+    <link href="https://allms.cn/p/13522.html"/>
+    <id>https://allms.cn/p/13522.html</id>
     <published>2021-02-21T11:12:41.000Z</published>
     <updated>2021-02-22T11:56:11.331Z</updated>
     
@@ -34,17 +34,17 @@
     
     
     
-    <category term="其他" scheme="https://qfmx.github.io/categories/%E5%85%B6%E4%BB%96/"/>
+    <category term="其他" scheme="https://allms.cn/categories/%E5%85%B6%E4%BB%96/"/>
     
     
-    <category term="测试" scheme="https://qfmx.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="https://allms.cn/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>logoback日志文件注释</title>
-    <link href="https://qfmx.github.io/p/13522.html"/>
-    <id>https://qfmx.github.io/p/13522.html</id>
+    <link href="https://allms.cn/p/13522.html"/>
+    <id>https://allms.cn/p/13522.html</id>
     <published>2021-02-21T11:12:41.000Z</published>
     <updated>2021-09-29T09:41:21.017Z</updated>
     
@@ -59,10 +59,10 @@
     
     
     
-    <category term="其他" scheme="https://qfmx.github.io/categories/%E5%85%B6%E4%BB%96/"/>
+    <category term="其他" scheme="https://allms.cn/categories/%E5%85%B6%E4%BB%96/"/>
     
     
-    <category term="测试" scheme="https://qfmx.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="https://allms.cn/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   

@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'    # 时区
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://allms.cn/       # 网址
+url: http://allms.cn/       # 网址
 root: /
 permalink: p/:abbrlink.html      # 文章命名
 abbrlink:

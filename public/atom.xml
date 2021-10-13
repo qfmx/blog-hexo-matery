@@ -6,7 +6,7 @@
   <link href="https://allms.cn/atom.xml" rel="self"/>
   
   <link href="https://allms.cn/"/>
-  <updated>2021-02-22T11:56:11.331Z</updated>
+  <updated>2021-10-13T02:37:57.020Z</updated>
   <id>https://allms.cn/</id>
   
   <author>
@@ -17,18 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hello</title>
-    <link href="https://allms.cn/p/13522.html"/>
-    <id>https://allms.cn/p/13522.html</id>
-    <published>2021-02-21T11:12:41.000Z</published>
-    <updated>2021-02-22T11:56:11.331Z</updated>
+    <title>centos7防火墙常用命令</title>
+    <link href="https://allms.cn/p/10001.html"/>
+    <id>https://allms.cn/p/10001.html</id>
+    <published>2021-10-13T12:10:10.000Z</published>
+    <updated>2021-10-13T02:37:57.020Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;这是一级标题&quot;&gt;&lt;a href=&quot;#这是一级标题&quot; class=&quot;headerlink&quot; title=&quot;这是一级标题&quot;&gt;&lt;/a&gt;这是一级标题&lt;/h1&gt;&lt;h2 id=&quot;二级标题&quot;&gt;&lt;a href=&quot;#二级标题&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;p&gt;1、开放端口&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;firewall-cmd –zone=public –add-port=5672/tcp –permanent&lt;/strong&gt;  # 开放5672端口&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;firewall-cmd</summary>
         
       
     
@@ -37,7 +39,7 @@
     <category term="其他" scheme="https://allms.cn/categories/%E5%85%B6%E4%BB%96/"/>
     
     
-    <category term="测试" scheme="https://allms.cn/tags/%E6%B5%8B%E8%AF%95/"/>
+    <category term="Linux" scheme="https://allms.cn/tags/Linux/"/>
     
   </entry>
   

@@ -44,7 +44,8 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+# 相对引用，插入图片可使用相对路径
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:

@@ -204,8 +204,8 @@ clicklove:
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
   avatar: /medias/avatar.jpg
-  career: 软件开发
-  introduction: 初见惊艳。
+  career: 阿猫会游泳
+  introduction: 一只会游泳的猫咪。
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
@@ -567,8 +567,8 @@ subtitle:
   startDelay: 1000 # 开始延迟
   typeSpeed: 200 # 打字速度
   backSpeed: 100 # 删除速度
-  sub1: 人就活一辈子，好好珍惜
-  sub2: Man only one life
+  sub1: 人生苦短，不如和猫咪一起游泳
+  sub2: Life is short. It's better to swim with a cat.
 
 # 手机二级菜单.
 navMenu:

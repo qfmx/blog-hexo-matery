@@ -77,7 +77,9 @@ public class Swagger2Config {
 
 }
 ```
+
 - 配置一个API：在您的controller层的API使用`@ApiOperation`注解标识即可，参照文件如下：
+
 ```java
 @RestController
 @RequestMapping("user")
@@ -104,9 +106,11 @@ public class UserController extends BaseController {
     }
 }
 ```
+
 ## 如何访问
 访问您的应用下的/doc.html即可。如：http://127.0.0.1:8080/doc.html
 如果访问不到，检查一下拦截器, 可能是资源权限未开放，请放行对应资源，参照如下：
+
 ```java
 @Configuration
 public class InterceptorConf implements WebMvcConfigurer {
@@ -127,4 +131,5 @@ public class InterceptorConf implements WebMvcConfigurer {
      }
 }
 ```
+
 好的，一般情况下到这儿已经可以了。

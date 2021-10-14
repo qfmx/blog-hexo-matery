@@ -6,7 +6,7 @@
   <link href="https://allms.cn/atom.xml" rel="self"/>
   
   <link href="https://allms.cn/"/>
-  <updated>2021-10-14T04:00:05.390Z</updated>
+  <updated>2021-10-14T06:46:17.592Z</updated>
   <id>https://allms.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>swagger最佳实践</title>
+    <link href="https://allms.cn/p/10004.html"/>
+    <id>https://allms.cn/p/10004.html</id>
+    <published>2021-10-14T12:10:10.000Z</published>
+    <updated>2021-10-14T06:46:17.592Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;基础配置&quot;&gt;&lt;a href=&quot;#基础配置&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术实践" scheme="https://allms.cn/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="swagger" scheme="https://allms.cn/tags/swagger/"/>
+    
+  </entry>
   
   <entry>
     <title>mybatis操作备忘</title>

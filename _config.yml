@@ -4,7 +4,7 @@
 
 # Site
 title: 浅枫沐雪                # 网站标题
-subtitle: 'sh allow s now'        # 网站副标题
+subtitle: '阿猫会游泳'        # 网站副标题
 description: '浅浅相遇、念念不忘'  # 网站描述
 keywords: 浅枫沐雪                # 关键词
 author: allms       # 作者本人
@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'    # 时区
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://allms.cn/       # 网址
+url: https://allms.cn/       # 网址
 root: /
 permalink: p/:abbrlink.html      # 文章命名
 abbrlink:

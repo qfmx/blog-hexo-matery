@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="centos7防火墙常用命令, 浅枫沐雪">
+    <meta name="keywords" content="mybatis操作备忘, 浅枫沐雪">
     <meta name="description" content="浅浅相遇、念念不忘">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>centos7防火墙常用命令 | 浅枫沐雪</title>
+    <title>mybatis操作备忘 | 浅枫沐雪</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -280,12 +280,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">centos7防火墙常用命令</h1>
+                    <h1 class="description center-align post-title">mybatis操作备忘</h1>
                 </div>
             </div>
         </div>
@@ -401,8 +401,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Linux/">
-                                <span class="chip bg-color">Linux</span>
+                            <a href="/tags/MyBatis/">
+                                <span class="chip bg-color">MyBatis</span>
                             </a>
                         
                     </div>
@@ -435,7 +435,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    182
+                    40
                 </div>
                 
 
@@ -460,30 +460,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>1、开放端口</p>
-<p><strong>firewall-cmd –zone=public –add-port=5672/tcp –permanent</strong>  # 开放5672端口</p>
-<p><strong>firewall-cmd –zone=public –remove-port=5672/tcp –permanent</strong> #关闭5672端口</p>
-<p><strong>firewall-cmd –reload</strong>  # 配置立即生效</p>
-<p>2、查看防火墙所有开放的端口</p>
-<p><strong>firewall-cmd –zone=public –list-ports</strong></p>
-<p>3.、关闭防火墙</p>
-<p>如果要开放的端口太多，嫌麻烦，可以关闭防火墙，安全性自行评估</p>
-<p><strong>systemctl stop firewalld.service</strong></p>
-<p>4、查看防火墙状态</p>
-<p> <strong>firewall-cmd –state</strong></p>
-<p>5、查看监听的端口</p>
-<p><strong>netstat -lnpt</strong></p>
-<p><strong>lsof -i:端口号</strong></p>
-<p><img src="/p/10001/1336432-20190302110949754-1765820036.png" alt="img"></p>
-<p><em>PS:centos7默认没有 netstat 命令，需要安装 net-tools 工具，yum install -y net-tools</em></p>
-<p>6、检查端口被哪个进程占用</p>
-<p><strong>netstat -lnpt |grep 5672</strong></p>
-<p><img src="/p/10001/1336432-20190302104128381-1210567174.png" alt="img"></p>
-<p>7、查看进程的详细信息</p>
-<p><strong>ps 6832</strong></p>
-<p><img src="/p/10001/1336432-20190302104342651-779103690.png" alt="img"></p>
-<p>8、中止进程</p>
-<p><strong>kill -9 6832</strong></p>
+                <h2 id="mybatis-原生"><a href="#mybatis-原生" class="headerlink" title="mybatis 原生"></a>mybatis 原生</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://mybatis.org/mybatis-3/">https://mybatis.org/mybatis-3/</a><h2 id="tk-mapper"><a href="#tk-mapper" class="headerlink" title="tk mapper"></a>tk mapper</h2></li>
+<li><a target="_blank" rel="noopener" href="https://mybatis.io/">https://mybatis.io/</a> （主网）</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/abel533/Mapper/wiki%EF%BC%88%E8%80%81%EF%BC%89">https://github.com/abel533/Mapper/wiki（老）</a></li>
+<li><a target="_blank" rel="noopener" href="https://mapper.mybatis.io/">https://mapper.mybatis.io/</a> （新）</li>
+<li><a target="_blank" rel="noopener" href="https://liuzh.blog.csdn.net/">https://liuzh.blog.csdn.net/</a> （作者）<h2 id="mybatis-plus"><a href="#mybatis-plus" class="headerlink" title="mybatis plus"></a>mybatis plus</h2></li>
+<li><a target="_blank" rel="noopener" href="https://baomidou.com/">https://baomidou.com/</a> （火）</li>
+</ul>
 
                 
             </div>
@@ -510,7 +494,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://allms.cn/p/10001.html">https://allms.cn/p/10001.html</a>
+                    <a href="https://allms.cn/p/10003.html">https://allms.cn/p/10003.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -548,8 +532,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Linux/">
-                                    <span class="chip bg-color">Linux</span>
+                                <a href="/tags/MyBatis/">
+                                    <span class="chip bg-color">MyBatis</span>
                                 </a>
                             
                         </div>
@@ -593,9 +577,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/p/10003.html">
                     <div class="card-image">
@@ -613,9 +598,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-13
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -628,6 +613,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -646,24 +632,24 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/p/10000.html">
+                <a href="/p/10001.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="logoback日志文件注释">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="centos7防火墙常用命令">
                         
-                        <span class="card-title">logoback日志文件注释</span>
+                        <span class="card-title">centos7防火墙常用命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            logoback配置文件
+                            centos7防火墙
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-13
                             </span>
                         <span class="publish-author">
                             
@@ -680,8 +666,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%B5%8B%E8%AF%95/">
-                        <span class="chip bg-color">测试</span>
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
                     </a>
                     
                 </div>

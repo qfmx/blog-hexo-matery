@@ -99,14 +99,17 @@
     <link href="https://allms.cn/p/10000.html"/>
     <id>https://allms.cn/p/10000.html</id>
     <published>2021-02-21T02:10:10.000Z</published>
-    <updated>2021-10-14T04:00:47.467Z</updated>
+    <updated>2021-10-15T03:57:57.516Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;看个视频呀&quot;&gt;&lt;a href=&quot;#看个视频呀&quot; class=&quot;headerlink&quot; title=&quot;看个视频呀&quot;&gt;&lt;/a&gt;看个视频呀&lt;/h2&gt;&lt;iframe</summary>
+    <summary type="html">&lt;h2 id=&quot;看个视频呀&quot;&gt;&lt;a href=&quot;#看个视频呀&quot; class=&quot;headerlink&quot; title=&quot;看个视频呀&quot;&gt;&lt;/a&gt;看个视频呀&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;内联代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;line-numbers</summary>
         
       
     

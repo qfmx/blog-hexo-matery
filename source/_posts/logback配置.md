@@ -13,8 +13,21 @@ password:
 ---
 
 ## 看个视频呀
+- 内联代码
+
+```html
 <iframe src="//player.bilibili.com/player.html?aid=80664494&bvid=BV1CJ411W7zk&cid=138050520&page=1" 
-	style="width: 640px; height: 430px; max-width: 100%"
+	style="width: 100%; height: 576px;"
+	scrolling="no" 
+	border="0" 
+	frameborder="no" 
+	framespacing="0" 
+	allowfullscreen="true">
+</iframe>
+```
+
+<iframe src="//player.bilibili.com/player.html?aid=80664494&bvid=BV1CJ411W7zk&cid=138050520&page=1" 
+	style="width: 100%; height: 576px;"
 	scrolling="no" 
 	border="0" 
 	frameborder="no" 
@@ -188,7 +201,7 @@ password:
 </configuration>
 ```
 
-- 配置文件二
+## 配置文件二
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -276,6 +289,98 @@ password:
 logging:
   config: classpath:logback/logback.xml
 ```
+## 多环境配置
+
+application.ym的配置：
+
+```yaml
+# 日志配置  为空为项目跟目录下的logs  或者指定已经存在的目录
+log:
+  path:
+```
+
+ 
+
+logback配置
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+说明：
+    1. 文件的命名和加载顺序有关
+       logback.xml早于application.yml加载，logback-spring.xml晚于application.yml加载
+       如果logback配置需要使用application.yml中的属性，需要命名为logback-spring.xml
+    2. logback使用application.yml中的属性
+       使用springProperty才可使用application.yml中的值 可以设置默认值
+
+-->
+<configuration scan="true" scanPeriod="60 seconds">
+
+    <!-- log base path -->
+    <springProperty scope="context" name="logPath" source="log.path" defaultValue="logs"/>
+    <!-- log name -->
+    <property name="LOG_HOME" value="${logPath}"/>
+    <!-- back log base path -->
+    <property name="LOG_BACK_HOME" value="${logPath}/backup"/>
+
+    <property name="SRVNAME" value="clsapi-console"/>
+    <!-- 文件切割大小 -->
+    <property name="maxFileSize" value="100MB" />
+    <!-- 文档保留天数 -->
+    <property name="maxHistory" value="60" />
+    <!-- 文档保留总大小 -->
+    <property name="totalSizeCap" value="10GB" />
+
+
+    <!-- 系统服务日志 -->
+    <appender name="FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/${SRVNAME}.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <fileNamePattern>${LOG_BACK_HOME}/%d{yyyy-MM-dd}/${SRVNAME}.%d{HH}.%i.log.gz</fileNamePattern>
+            <!-- 单个日志文件最多 100MB, 60天的日志周期，最大不能超过10GB -->
+            <maxFileSize>${maxFileSize}</maxFileSize>
+            <maxHistory>${maxHistory}</maxHistory>
+            <totalSizeCap>${totalSizeCap}</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyyMMdd HH:mm:ss.SSS} %X{LOG_ID} [%thread] %-5level %logger{100}.%method\(\):%L - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- On Windows machines setting withJansi to true enables ANSI
+         color code interpretation by the Jansi library. This requires
+         org.fusesource.jansi:jansi:1.8 on the class path.  Note that
+         Unix-based operating systems such as Linux and Mac OS X
+         support ANSI color codes by default.
+          recognizes "%black", "%red", "%green","%yellow","%blue",
+          "%magenta","%cyan", "%white", "%gray", "%boldRed","%boldGreen",
+          "%boldYellow", "%boldBlue", "%boldMagenta""%boldCyan",
+          "%boldWhite" and "%highlight"
+          -->
+        <!--withJansi>true</withJansi-->
+        <encoder>
+            <!--%d{yyyy-MM-dd HH:mm:ss.SSS} -%5p ${PID:-} [%15.15t] %-40.40logger{39} : %m%n-->
+            <pattern>%boldCyan(%d{yyyy-MM-dd HH:mm:ss.SSS}) - %boldRed(%5p) %blue([%10.10t]) %magenta(%-35.35logger{20}) %yellow(%2M) %green(%2L) : %msg%n</pattern>
+            <!--<pattern>%d{yyyyMMddHHmmss} [%thread] [%c %2M %2L] %-3p - %m%n</pattern>-->
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+    <logger name="com.hopebank.clsapi.aspect.LogsAspect" level="debug">
+        <appender-ref ref="api_call_file"/>
+    </logger>
+    <logger name="org.springframework.web.servlet" level="info"/>   
+
+</configuration>
+```
+
 ## 结尾
 
 感谢阅读。

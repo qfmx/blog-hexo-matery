@@ -16,24 +16,29 @@ password:
 - 内联代码
 
 ```html
+<div style="position: relative; margin-bottom: 30px; float: left; width: 100%; height: 0; padding-bottom: 75%;">
 <iframe src="//player.bilibili.com/player.html?aid=80664494&bvid=BV1CJ411W7zk&cid=138050520&page=1" 
-	style="width: 100%; height: 576px;"
+	style="width: 100%; height: 100%; position: absolute;left: 0;top: 0;"
 	scrolling="no" 
 	border="0" 
 	frameborder="no" 
 	framespacing="0" 
 	allowfullscreen="true">
 </iframe>
+</div>
 ```
 
+<div style="position: relative; margin-bottom: 30px; float: left; width: 100%; height: 0; padding-bottom: 75%;">
 <iframe src="//player.bilibili.com/player.html?aid=80664494&bvid=BV1CJ411W7zk&cid=138050520&page=1" 
-	style="width: 100%; height: 576px;"
+	style="width: 100%; height: 100%; position: absolute;left: 0;top: 0;"
 	scrolling="no" 
 	border="0" 
 	frameborder="no" 
 	framespacing="0" 
 	allowfullscreen="true">
 </iframe>
+</div>
+
 
 ## 配置文件
 

@@ -13,19 +13,43 @@ password:
 ---
 
 ## 基础配置
-- 在pom.xml引入如下依赖，1.9.6是swagger-bootstrap-ui的最后一个版本，适配了springfox-swagger2:2.9.2版本。可参照下面配置
+- 在pom.xml引入如下依赖，1.9.6是swagger-bootstrap-ui的最后一个版本，适配了springfox-swagger2:2.9.2版本。
+（注意，直接使用springfox-swagger2:2.9.2版本可能会导致`for String ""`问题）, 可参照下面的配置进行修改。
 
 ```xml
-<dependency>
-     <groupId>io.springfox</groupId>
-     <artifactId>springfox-swagger2</artifactId>
-     <version>2.9.2</version>
-</dependency>
-<dependency>
-     <groupId>com.github.xiaoymin</groupId>
-     <artifactId>swagger-bootstrap-ui</artifactId>
-     <version>1.9.6</version>
-</dependency>
+    <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-swagger2</artifactId>
+        <version>2.9.2</version>
+        <!--排除swagger-models和swagger-annotations:1.5.20-->
+        <exclusions>
+            <exclusion>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-models</artifactId>
+            </exclusion>
+            <exclusion>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+    <!--显示添加：swagger-models：1.5.22-->
+    <dependency>
+        <groupId>io.swagger</groupId>
+        <artifactId>swagger-models</artifactId>
+        <version>1.5.22</version>
+    </dependency>
+    <!--显示添加：swagger-annotations：1.5.22-->
+    <dependency>
+        <groupId>io.swagger</groupId>
+        <artifactId>swagger-annotations</artifactId>
+        <version>1.5.22</version>
+    </dependency>
+    <dependency>
+        <groupId>com.github.xiaoymin</groupId>
+        <artifactId>swagger-bootstrap-ui</artifactId>
+        <version>1.9.6</version>
+    </dependency>
 ```
 
 - Swagger2Config文件配置，可以在项目的conf包下新建Swagger2Config.java文件，配置参考如下

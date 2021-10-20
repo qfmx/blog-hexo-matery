@@ -6,7 +6,7 @@ toc: true
 summary: centos7防火墙
 categories: 其他
 tags: Linux
-abbrlink: 10001
+abbrlink: 10002
 date: 2021-10-13 20:10:10
 img:
 password:

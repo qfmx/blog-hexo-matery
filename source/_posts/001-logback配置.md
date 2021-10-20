@@ -6,7 +6,7 @@ toc: true
 summary: logoback配置文件
 categories: 其他
 tags: 测试
-abbrlink: 10000
+abbrlink: 10001
 date: 2021-02-21 10:10:10
 img:
 password:
